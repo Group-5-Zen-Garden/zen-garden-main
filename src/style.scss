@@ -1,22 +1,58 @@
+//-------Fonts-------
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Lora&family=News+Cycle&family=Old+Standard+TT:wght@700&display=swap');
 
+//-------Variables-------
+$primary-font: 'Josefin Sans', sans-serif;
+$header-font: 'Old Standard TT', serif;
+$other-font: 'News Cycle', sans-serif;
 
+$color-1: #330242; // Russian Violet
+$color-2: #128F9D; // Viridian Green 
+$color-3: #0B3B5E; // Indigo Dye
+$color-4: #9694B5; // Blue Bell
+$color-5: #EDFFFD; // Azure
+
+//----------Small Screen Code----------
+header, .summary{
+	padding-left: 50px;
+}
+h1{
+	font-size: 40px;
+	font-family: $header-font;
+}
+h3{
+	font-size:25px;
+	font-family: $other-font;
+}
+body{
+	font-family: $primary-font;
+}
 
 //----------Large Screen Code----------
-@media (min-width: 35rem) {
+@media (min-width: 40rem) {
+
+	#css-zen-garden{
+		padding-left: 5%;
+		padding-right: 5%;
+	}
 
 	.page-wrapper{
 		display: grid;
 		grid-template-columns: 66% 33%;
-		grid-gap: 10px;
+		grid-gap: 20px;
 	}
 	.intro, .main {
 		grid-column: 1/2;
 	}
-	aside {
+	aside{
 		grid-column: 2/3;
 	}
+	footer a{
+		grid-column: 2/3;
+	} //Not working???
 }
 //----------End of Large Screen Code----------
+//----------Original code below----------
 
 
 /* css Zen Garden default style v1.02 */
