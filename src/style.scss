@@ -14,7 +14,8 @@ $color-5: #EDFFFD; // Azure
 
 //----------Small Screen Code----------
 header, .summary{
-	padding-left: 50px;
+	padding-left: 10%;
+	padding-right: 15%;
 }
 h1{
 	font-size: 40px;
@@ -29,7 +30,7 @@ body{
 }
 
 //----------Large Screen Code----------
-@media (min-width: 40rem) {
+@media (min-width: 45rem) {
 
 	#css-zen-garden{
 		padding-left: 5%;
