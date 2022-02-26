@@ -1,3 +1,24 @@
+
+
+
+//----------Large Screen Code----------
+@media (min-width: 35rem) {
+
+	.page-wrapper{
+		display: grid;
+		grid-template-columns: 66% 33%;
+		grid-gap: 10px;
+	}
+	.intro, .main {
+		grid-column: 1/2;
+	}
+	aside {
+		grid-column: 2/3;
+	}
+}
+//----------End of Large Screen Code----------
+
+
 /* css Zen Garden default style v1.02 */
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
 
@@ -7,8 +28,7 @@
 
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 
-/*Hellooooooooooooooooooooooooooooooooooo*/
-/* basic elements */
+/* basic elements 
 html {
 	margin: 0;
 	padding: 0;
@@ -50,7 +70,7 @@ abbr {
 	}
 
 
-/* specific divs */
+specific divs
 .page-wrapper { 
 	background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left; 
 	padding: 0 175px 0 110px;  
@@ -191,4 +211,4 @@ footer a:link, footer a:visited {
 	right: 0; 
 	width: 148px; 
 	height: 110px;
-	}
+	} */
