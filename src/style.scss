@@ -8,6 +8,9 @@ body{
 
 p{
 	line-height: 25px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 //gives a tab to the paragraph's first lines
@@ -25,6 +28,12 @@ p::first-letter{
 {
 	width: 80%;
 	margin: 20px auto 20px auto;
+}
+
+.intro
+{
+	background-color: $color-4;
+	color: $color-5;
 }
 
 h1{
