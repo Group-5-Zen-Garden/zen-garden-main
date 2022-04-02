@@ -81,8 +81,8 @@ nav ul li a, .zen-resources ul li a
 	font-weight: bolder;
 }
 
-h1, h2
-{
+h1, h2{
+	color: $color-7;
 	font-size: 2.3em;
 	font-family: $header-font;
 	width: 50%;
@@ -392,18 +392,22 @@ div > h3{
 	display: none;
 }
 
-h3{
-	//margin-left: 0;
-	//margin-right: 0;
-	padding-left: 2.19em;
+h1, h2{
+	color: $color-7;
 }
 
-h2
+h1, h2, h3{
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 2em;
+}
+
+/*h2
 {
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-}
+}*/
 
 #css-zen-garden{
 	padding-left: 5%;
