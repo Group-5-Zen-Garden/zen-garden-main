@@ -1,11 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => 
 {
-document.querySelector('body').setAttribute('class', 'no-animation-time') //adds the no-animation class to the body
+const bodyElement = document.querySelector('body')
+bodyElement.setAttribute('class', 'no-animation-time') //adds the no-animation class to the body
 const menuIcon = document.createElement('div'); //create a div for the menu icon
 const line1 = document.createElement('span'); //create the top bar
 const line2 = document.createElement('span'); //create the middle bar
 const line3 = document.createElement('span'); //create the bottom bar
-document.body.prepend(menuIcon); //add the menu-icon div to the top of the body
+bodyElement.prepend(menuIcon); //add the menu-icon div to the top of the body
 menuIcon.prepend(line3); //adds the lines inside to top of div
 menuIcon.prepend(line2);
 menuIcon.prepend(line1);
@@ -34,6 +35,6 @@ toggleNav = () =>
 time set in an opposing "all-in-body" rule. By doing so this prevents animations being played when page is loaded.*/
 setTimeout(allowAnimations = () =>
 {
-	document.body.classList.toggle('standard-animation-time');
+	bodyElement.classList.toggle('standard-animation-time');
 },  600);
 })

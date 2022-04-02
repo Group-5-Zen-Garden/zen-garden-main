@@ -3,10 +3,12 @@
 @import 'partials/colors';
 
 //----------Small Screen Code----------
-body{
+body
+{
 	font-size: 16px;
 	position: $relative-positioning;
 	height: 100%;
+	background-image: url(assets/repeated-square.png);
 }
 
 //used to prevent animations on page load
@@ -35,15 +37,19 @@ p::first-letter{
 }
 
 //no tab for the "download line"
-#zen-summary p:nth-child(2)::first-letter{
+.summary p:nth-child(2)::first-letter{
 	margin-left: 0px;
 }
 
 //center content on small screens
-#zen-intro, #zen-supporting
+//#zen-intro, .zen-supporting
+//{
+	
+//}
+
+.design-archives, .zen-resources
 {
-	width: 80%;
-	margin: 1.25em auto 1.25em auto;
+	margin-left: 1.38em;
 }
 
 .select, .archives, .resources
@@ -55,8 +61,7 @@ p::first-letter{
 .select
 {
 	width: 50%;
-	margin: 1.1em 30% 0.6em auto;
-	white-space: nowrap;
+	margin: 0.2em 30% 0.2em auto;
 }
 
 ul
@@ -88,10 +93,7 @@ h1, h2
 h3{
 	font-size:1.7em;
 	font-family: $header-font;
-	width: 50%;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 15px;
+	padding: 0.94em;
 }
 
 a{
@@ -103,61 +105,88 @@ a:hover{
 
 .intro
 {
+	width: 80%;
+	margin: 2.25em auto 1.25em auto;
 	background-color: $color-3;
 	color: $color-5;
-	padding: 1px 15px 5px 15px;
-	border-radius: 5px;
-	margin: 20px;
+	padding: 0.06em 0.94em 0.94em 0.94em;
+	border-radius: 0.3em;
 	h3{
 	color: $color-2;
 	}
 }
 
 .explanation{
+	width: 80%;
+	margin: 1.25em auto 1.25em auto;
 	background-color: $color-2;
 	color: $color-5;
-	padding: 1px 15px 5px 15px;
-	border-radius: 5px;
-	margin: 20px;
+	padding: 0.06em 0.94em 0.94em 0.94em;
+	border-radius: 0.3em;
 	h3{
 	color: $color-3;
 	}
 }
 
 .participation{
+	width: 80%;
+	margin: 1.25em auto 1.25em auto;
 	background-color: $color-4;
 	color: $color-5;
-	padding: 1px 15px 5px 15px;
-	border-radius: 5px;
-	margin: 20px;
+	padding: 0.06em 0.94em 0.94em 0.94em;
+	border-radius: 0.3em;
 	h3{
 	color: $color-6;
 	}
 }
 
 .benefits{
+	width: 80%;
+	margin: 1.25em auto 1.25em auto;
 	background-color: $color-6;
 	color: $color-5;
-	padding: 1px 15px 5px 15px;
-	border-radius: 5px;
-	margin: 20px;
+	padding: 0.06em 0.94em 0.94em 0.94em;
+	border-radius: 0.3em;
 	h3{
 	color: $color-1;
 	}
 }
 
 .requirements{
+	width: 80%;
+	margin: 1.25em auto 1.25em auto;
 	background-color: $color-1;
 	color: $color-5;
-	padding: 0.06em 1em 0.3em 1em;
+	padding: 0.06em 0.94em 0.94em 0.94em;
 	border-radius: 0.3em;
 	h3{
 		color: $color-4;
 	}
 }
 
-footer{
-	padding: 0.3em;
+footer
+{
+	width: 80%;
+	margin: 1.25em auto 1.25em auto;
+	padding: 0.94em;
+	background-color: $color-2;
+	border-radius: 0.3em;
+}
+
+.zen-validate-html
+{
+	margin-left: 4em;
+}
+
+footer a
+{
+	margin-left: 3em;
+	color: $color-5;
+}
+
+footer a:hover
+{
+	color: $color-7;
 }
 
 //less margin between h3's and p's(better proximity imho)
@@ -174,7 +203,6 @@ div > h3{
 	left: -12.5em;
 	width: 0px;
 	height: 100%;
-	min-height: 100%;
 	background-color: $color-2;
 	transition: 600ms;
 }
@@ -187,7 +215,7 @@ div > h3{
 	height: 3.13em;
 	width: 5%;
 	z-index: 1;
-	top: -0.9em;
+	top: -0.4em;
 	animation: menu-move-left $quick-animation-time 0s linear 1 forwards;
 }
 
@@ -355,25 +383,26 @@ div > h3{
 }
 
 //----------Large Screen Code----------
+@media (min-width: 1080px) //common 1920 X 1080 viewport
+{
 
 //no sliding menu in large view
-@media (min-width: 45rem) {
 .menu-icon
 {
 	display: none;
 }
 
-//NOW WE NEED TO DISPLAY THE NAV IN LARGE VIEW!!!
-/*.sidebar
-{
-	width: 20em;
-	left: 0px;
-}*/
+h3{
+	//margin-left: 0;
+	//margin-right: 0;
+	padding-left: 2.19em;
+}
 
-h1, h2, h3{
-	margin-left: 0;
-	margin-right: 0;
-	padding-left: 35px;
+h2
+{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #css-zen-garden{
@@ -381,20 +410,27 @@ h1, h2, h3{
 	padding-right: 5%;
 }
 
-.page-wrapper{
+.page-wrapper
+{
 	display: grid;
-	grid-template-columns: 66% 33%;
-	grid-gap: 1.25em;
+	grid-template-columns: repeat(5, 1fr);
+	width: 100%;
 }
-.intro, .main {
-	grid-column: 1/2;
+
+.intro, .main
+{
+	grid-column: 3 / span 3;
 }
-aside{
-	grid-column: 2/3;
-}
-footer a{
-	grid-column: 2/3;
-} //Not working???
+
+//show sidebar in large view
+.sidebar
+{
+	//grid-column: 1 / span 2; doesn't do anything
+	top: 2.25em;
+	left: 3.13em; //use this to position horizontally
+	width: auto;
+	padding-right: 1.25em;
+} 
 }
 //----------End of Large Screen Code----------
 //----------Original code below----------
