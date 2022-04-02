@@ -46,35 +46,6 @@ p::first-letter{
 	margin: 1.25em auto 1.25em auto;
 }
 
-h1{
-	font-size: 2.5em;
-	font-family: $header-font;
-	padding-top: 1.25em;
-}
-
-h1, h2
-{
-	font-size: 2.06em;
-	font-family: $header-font;
-	width: 50%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-h3{
-	color: $color-2;
-	font-size:1.56em;
-	font-family: $header-font;
-	width: 50%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.explanation h3
-{
-	color: $color-1;
-}
-
 .select, .archives, .resources
 {
 	color: $color-5;
@@ -105,6 +76,24 @@ nav ul li a, .zen-resources ul li a
 	font-weight: bolder;
 }
 
+h1, h2
+{
+	font-size: 2.3em;
+	font-family: $header-font;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h3{
+	font-size:1.7em;
+	font-family: $header-font;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px;
+}
+
 a{
 	color: $color-2;
 }
@@ -119,6 +108,9 @@ a:hover{
 	padding: 1px 15px 5px 15px;
 	border-radius: 5px;
 	margin: 20px;
+	h3{
+	color: $color-2;
+	}
 }
 
 .explanation{
@@ -127,6 +119,9 @@ a:hover{
 	padding: 1px 15px 5px 15px;
 	border-radius: 5px;
 	margin: 20px;
+	h3{
+	color: $color-3;
+	}
 }
 
 .participation{
@@ -135,6 +130,9 @@ a:hover{
 	padding: 1px 15px 5px 15px;
 	border-radius: 5px;
 	margin: 20px;
+	h3{
+	color: $color-6;
+	}
 }
 
 .benefits{
@@ -143,6 +141,9 @@ a:hover{
 	padding: 1px 15px 5px 15px;
 	border-radius: 5px;
 	margin: 20px;
+	h3{
+	color: $color-1;
+	}
 }
 
 .requirements{
@@ -151,7 +152,7 @@ a:hover{
 	padding: 0.06em 1em 0.3em 1em;
 	border-radius: 0.3em;
 	h3{
-		color: $color-5;
+		color: $color-4;
 	}
 }
 
@@ -368,6 +369,12 @@ div > h3{
 	width: 20em;
 	left: 0px;
 }*/
+
+h1, h2, h3{
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 35px;
+}
 
 #css-zen-garden{
 	padding-left: 5%;
